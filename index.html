@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<link rel="stylesheet" href="jQueryMobile/jquery.mobile-1.3.1.min.css" />
+	<script src="jQuery1.9.1/jQuery.js"></script>
+	<script src="jQueryMobile/jquery.mobile-1.3.1.min.js"></script>		
+	<title>Raffles</title>
+</head>
+<body>
+	
+	<div data-role="page" id="pagina1">
+		<div data-role="header">
+			<h1>Raffles</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#pagina2" data-transition="flip" class="ui-btn-active">Teams</a></li>
+					<li><a href="#pagina2" data-transition="flip">Second</a></li>
+					<li><a href="#pagina2" data-transition="flip">Third</a></li>
+				</ul>	
+			</div>	
+		</div>
+		<div data-role="content" data-theme="b">
+			<p>Teams Raffle</p>
+			<input type="text" name="team" placeholder="Search Team" data-inline="true">
+			<a href="#pagina2" data-role="button" data-transition="flip">Add</a>
+			<a href="#pagina2" data-role="button" data-transition="flip">Sort</a>
+			
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="footer1">
+			<h4>Raffles</h4>
+		</div>
+	</div>
+
+	<div data-role="page" data-add-back-btn="true" id="pagina2">
+		<div data-role="header">
+			<h1>Sorted Teams</h1>
+		</div>
+		<div data-role="content" data-theme="b">
+			<p>Sorted Team</p>
+			<a href="#" data-role="button" data-inline="true">Sort Again</a>
+			<a href="pagina1" data-role="button" data-rel="back" data-inline="true">Back</a>			
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="footer1">
+			<h4>Raffles</h4>
+		</div>
+	</div>	
+</body>
+</html>
